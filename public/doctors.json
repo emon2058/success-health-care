@@ -1,0 +1,23 @@
+[
+    {
+        "id" :1,
+        "img": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGRvY3RvcnN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "name": "Osman Yousuf",
+        "occupation": "Surgery, Orthopedics",
+        "description": "Branch of medicine that deals with the disorders some parts of the circulatory system.Themedical diagnosis and treatment of congenital heart defects"
+    },
+    {
+        "id" :2,
+        "img": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGRvY3RvcnN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "name": "Sizuka",
+        "occupation": "Diagnostic medicine",
+        "description": "Branch of medicine that consists of the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the oral."
+    },
+    {
+        "id" :3,
+        "img": "https://images.unsplash.com/photo-1527613426441-4da17471b66d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZG9jdG9yc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        "name": "Ani Koeshi",
+        "occupation": "Emergency medicine",
+        "description": "Identify with potential hearing and/or vision concerns and assist them in finding care. Early detection, and treatment if necessary, can greatly enhance success"
+    }
+]

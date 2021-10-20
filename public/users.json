@@ -1,0 +1,17 @@
+[
+    {
+        "id" :1,
+        "img": "https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "description": "Branch of medicine that deals with the disorders some parts of the circulatory system.Themedical diagnosis and treatment of congenital heart defects"
+    },
+    {
+        "id" :2,
+        "img": "https://images.unsplash.com/photo-1614436163996-25cee5f54290?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHVzZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "description": "Branch of medicine that consists of the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the oral."
+    },
+    {
+        "id" :3,
+        "img": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8dXNlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "description": "Identify with potential hearing and/or vision concerns and assist them in finding care. Early detection, and treatment if necessary, can greatly enhance success"
+    }
+]

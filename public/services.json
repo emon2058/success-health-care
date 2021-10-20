@@ -1,0 +1,50 @@
+[
+    {
+        "id" :1,
+        "img": "https://i.ibb.co/P51Z4vn/cardiology.jpg",
+        "title": "Cardiology",
+        "description": "Branch of medicine that deals with the disorders some parts of the circulatory system.Themedical diagnosis and treatment of congenital heart defects",
+        "rating": 5,
+        "price": 50
+    },
+    {
+        "id" :2,
+        "img": "https://i.ibb.co/YDkP0xq/dental.jpg",
+        "title": "Dental",
+        "description": "Branch of medicine that consists of the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the oral.",
+        "rating": 4.5,
+        "price": 55
+    },
+    {
+        "id" :3,
+        "img": "https://i.ibb.co/602VzLq/hearing.jpg",
+        "title": "Hearing and Vision",
+        "description": "Identify with potential hearing and/or vision concerns and assist them in finding care. Early detection, and treatment if necessary, can greatly enhance success",
+        "rating": 4.5,
+        "price": 60
+    },
+    {
+        "id" :4,
+        "img": "https://i.ibb.co/GQqxLV8/open-heart.jpg",
+        "title": "Open Heart",
+        "description": "Open-heart surgery is any type of surgery where the chest is cut open and surgery is performed on the muscles, valves, or arteries of the heart.",
+        "rating": 4.8,
+        "price": 45
+    },
+    {
+        "id" :5,
+        "img": "https://i.ibb.co/D43tQRR/orthopedic.jpg",
+        "title": "Orthopedic",
+        "description": "Branch of medicine concerned with the musculoskeletal system and treating injuries to bones, joints, ligaments, or tendons",
+        "rating": 4.6,
+        "price": 60
+    },
+    {
+        "id" :6,
+        "img": "https://i.ibb.co/vsVNt9w/vaccine.jpg",
+        "title": "Vaccine",
+        "description": "A vaccine is a biological preparation that provides active acquired immunity to a particular infectious disease",
+        "rating": 4.6,
+        "price": 60
+    }
+]
