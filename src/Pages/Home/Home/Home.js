@@ -6,7 +6,7 @@ import Testimonials from '../Testimonials/Testimonials';
 
 const Home = () => {
     return (
-        <div>
+        <div id="home">
             <Banner></Banner>
             <Services></Services>
             <Testimonials></Testimonials>

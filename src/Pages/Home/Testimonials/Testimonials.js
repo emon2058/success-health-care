@@ -10,7 +10,7 @@ const Testimonials = () => {
         .then(data => setUsers(data))
     },[])
     return (
-        <div className="bg-info p-4">
+        <div id="testimonial" className="bg-info p-4">
             <div className="container my-5 ">
             <h5 className="text-light">A good word means a lot</h5>
             <h1>Patient <span className="text-primary">testimonials</span> </h1>

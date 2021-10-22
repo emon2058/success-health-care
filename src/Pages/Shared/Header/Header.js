@@ -1,22 +1,26 @@
 import React from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Button, Container, Nav, Navbar } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 const Header = () => {
     return (
         <>
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+            <Navbar fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Container>
-                <Navbar.Brand href="#home">SH CARE</Navbar.Brand>
+                <Navbar.Brand as={HashLink} to="/home#home">SH CARE</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
                         </Nav>
                         <Nav>
-                            <Nav.Link href="#home">Home</Nav.Link>
-                            <Nav.Link href="#work">OUR WORK</Nav.Link>
-                            <Nav.Link href="#contact">CONTACT US</Nav.Link>
-                            <Nav.Link href="#features">LOG IN</Nav.Link>
-                            <Nav.Link href="#pricing">REGISTRATION</Nav.Link>
+                            <Nav.Link as={HashLink} to="/home#home">Home</Nav.Link>
+                            <Nav.Link as={HashLink} to="/home#services">Services</Nav.Link>
+                            <Nav.Link as={HashLink} to="/home#testimonial">Testimonials</Nav.Link>
+                            <Nav.Link as={HashLink} to="/home#doctors">Doctors</Nav.Link>
+                            <Nav.Link as={Link} to="/login">LOG IN</Nav.Link>
+                            <Button variant="dark">Logout</Button>
+                            <Nav.Link as={HashLink} to="/registration">REGISTRATION</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
