@@ -9,6 +9,8 @@ import Registration from './Pages/Registration/Registration';
 import ServiceDetails from './Pages/Home/ServiceDetails/ServiceDetails';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
+import Contact from './Pages/Contact/Contact';
+import Discount from './Pages/Discount/Discount';
 
 function App() {
   return (
@@ -30,6 +32,12 @@ function App() {
               </Route>
               <Route path="/registration">
                 <Registration></Registration>
+              </Route>
+              <Route path="/contact">
+                <Contact></Contact>
+              </Route>
+              <Route path="/discount">
+                <Discount></Discount>
               </Route>
               <Route path="*">
                 <NotFound></NotFound>
