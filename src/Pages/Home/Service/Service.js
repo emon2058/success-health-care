@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, Card, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Service = (props) => {
     const {id,img,title,description}=props.service;
@@ -11,10 +12,14 @@ const Service = (props) => {
                     <Card.Body>
                     <Card.Title>{title}</Card.Title>
                     <Card.Text>
-                        {description}
+                        {description.slice(0,280)}...
                     </Card.Text>
                     </Card.Body>
-                    <Button variant="outline-warning">Show Details</Button>
+                    <Card.Title  className="text-center" >
+                        <Link to = {`/service/${id}`}>
+                            <Button variant="outline-primary">Show Details</Button>
+                        </Link>
+                    </Card.Title>
                 </Card>
             </Col>
         </>

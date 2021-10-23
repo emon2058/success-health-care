@@ -4,21 +4,21 @@ import Form from 'react-bootstrap/Form';
 import firebaseAuthentication from '../Firebase/firebase.init';
 import Button from 'react-bootstrap/Button';
 import { Link,useHistory } from 'react-router-dom';
+import useAuth from '../../../hooks/useAuth';
 
 firebaseAuthentication()
 const Login = () => {
-    const [user,setUser] = useState({});
-
     const[values,setValues] = useState({
         email:'',
         password:'',
         error:''
     })
+    const {auth,signInUsingGoogle}=useAuth()
     const history=useHistory()
 
     const {email,password,error} = values;
 
-    const auth = getAuth();
+    // const auth = getAuth();
 
     const handleChange =(props) => event =>{
         setValues({...values,[props] : event.target.value})
@@ -34,33 +34,6 @@ const Login = () => {
             history.push('/')
             // ...
         })
-    }
-    const signInUsingGoogle = (e)=>{
-        e.preventDefault()
-    const googleProvider = new GoogleAuthProvider();
-    signInWithPopup(auth, googleProvider)
-        .then((result) => {
-            // This gives you a Google Access Token. You can use it to access the Google API.
-            const {displayName , email, photoURL} = result.user;
-
-            const loggedUser = {
-                name: displayName,
-                email: email,
-                photo: photoURL
-              }
-              setUser(loggedUser)
-            // ...
-            console.log(result);
-            alert("success")
-        }).catch((error) => {
-            // Handle Errors here.
-            const errorCode = error.code;
-            const errorMessage = error.message;
-            // The email of the user's account used.
-            const email = error.email;
-            console.log(errorCode,errorMessage,email);
-
-          });
     }
 
     return (

@@ -9,13 +9,14 @@ firebaseAuthentication()
 
 const Registration = () => {
 const[values,setValues] = useState({
+        displayName:'',
         email:'',
         password:'',
         error:''
     })
     const history=useHistory()
 
-    const {email,password,error} = values;
+    const {displayName,email,password,error} = values;
 
     const auth = getAuth();
 
@@ -47,6 +48,10 @@ const[values,setValues] = useState({
     return (
         <div className="py-5 bg-info" style={{height:"85.9vh"}}>
             <Form className="my-4 w-50 d-flex flex-column justify-content-center mx-auto" >
+                <Form.Group className="mb-3" controlId="formGridAddress1">
+                    <Form.Label>Name</Form.Label>
+                    <Form.Control type="text" value={displayName} onChange={handleChange('name')} placeholder="your name" />
+                </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
                     <Form.Control type="email" value={email} onChange={handleChange('email')} placeholder="Enter email" />
