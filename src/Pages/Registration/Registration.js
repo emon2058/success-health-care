@@ -16,7 +16,7 @@ const[values,setValues] = useState({
     })
     const history=useHistory()
 
-    const {displayName,email,password,error} = values;
+    const {displayName, email,password,error} = values;
 
     const auth = getAuth();
 
@@ -43,6 +43,12 @@ const[values,setValues] = useState({
             history.push('/')
             console.log(user);
         })
+        .catch(e=>{
+            setValues({
+                ...values,
+                error:e.message
+            })
+        })
     }
 
     return (
@@ -50,7 +56,7 @@ const[values,setValues] = useState({
             <Form className="my-4 w-50 d-flex flex-column justify-content-center mx-auto" >
                 <Form.Group className="mb-3" controlId="formGridAddress1">
                     <Form.Label>Name</Form.Label>
-                    <Form.Control type="text" value={displayName} onChange={handleChange('name')} placeholder="your name" />
+                    <Form.Control type="text" value={displayName} onChange={handleChange('displayName')} placeholder="your name" />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>

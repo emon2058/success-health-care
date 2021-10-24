@@ -11,6 +11,7 @@ import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
 import Contact from './Pages/Contact/Contact';
 import Discount from './Pages/Discount/Discount';
+import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -24,21 +25,21 @@ function App() {
               <Route path="/home">
                 <Home></Home>
               </Route>
-              <Route path="/service/:serviceId">
+              <PrivateRoute path="/service/:serviceId">
                 <ServiceDetails></ServiceDetails>
-              </Route>
+              </PrivateRoute>
               <Route path="/login">
                 <Login></Login>
               </Route>
               <Route path="/registration">
                 <Registration></Registration>
               </Route>
-              <Route path="/contact">
+              <PrivateRoute path="/contact">
                 <Contact></Contact>
-              </Route>
-              <Route path="/discount">
+              </PrivateRoute>
+              <PrivateRoute path="/discount">
                 <Discount></Discount>
-              </Route>
+              </PrivateRoute>
               <Route path="*">
                 <NotFound></NotFound>
               </Route>

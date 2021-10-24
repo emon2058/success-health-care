@@ -9,27 +9,11 @@ const useFirebase = () => {
 
     const auth = getAuth()
 
-    const signInUsingGoogle = (e)=>{
-        e.preventDefault()
+    const signInUsingGoogle = ()=>{
+    setIsLoading(true)
     const googleProvider = new GoogleAuthProvider();
-    signInWithPopup(auth, googleProvider)
-        .then((result) => {
-            // This gives a Google Access Token to access the Google API.
-            const {displayName , email, photoURL} = result.user;
-
-            const loggedUser = {
-                name: displayName,
-                email: email,
-                photo: photoURL
-              }
-              setUser(loggedUser)
-            console.log(result);
-            alert("success")
-        }).catch((error) => {
-            const errorMessage = error.message;
-            console.log(errorMessage);
-
-          });
+    return signInWithPopup(auth, googleProvider)
+        
     }
     useEffect(() => {
         const unsubscribed = onAuthStateChanged(auth, user => {
@@ -44,17 +28,21 @@ const useFirebase = () => {
         return () => unsubscribed;
     }, [])
     const logOut=()=>{
+        setIsLoading(true)
         signOut(auth).then(() => {
         // Sign-out successful.
-        }).catch((error) => {
+        })
+        .catch((error) => {
         // An error happened.
         console.log(error.message);
-        });
+        })
+        .finally(()=>setIsLoading(false))
     }
     return {
         user,
         auth,
         signInUsingGoogle,
+        isLoading,
         logOut
     }
 };

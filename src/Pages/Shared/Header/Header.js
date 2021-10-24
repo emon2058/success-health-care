@@ -23,7 +23,7 @@ const Header = () => {
                             <Nav.Link as={HashLink} to="/contact">Contact</Nav.Link>
                             <Nav.Link as={HashLink} to="/discount">Discount</Nav.Link>
                             {user?.email?<Stack direction="horizontal">
-                                <small className="text-info">{user.displayName}</small>
+                                <small className="text-info">{user.displayName?user.displayName : user.email.substring(0, user.email.indexOf("@"))}</small>
                             <Button variant="dark" onClick={logOut}>Logout</Button> 
                             </Stack>:
                             <Nav.Link as={Link} to="/login">Login</Nav.Link>
